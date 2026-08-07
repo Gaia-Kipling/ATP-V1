@@ -726,14 +726,55 @@ footer {
 
     header {
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding: 20px;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    .logo h2 {
+        font-size: 1.2rem;
+    }
+
+    .logo p {
+        font-size: 0.9rem;
     }
 
     nav {
+        display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 12px;
+        width: 100%;
         margin-top: 10px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav a {
+        flex: 0 0 auto;
+        padding: 5px 10px;
+        font-size: 0.9rem;
     }
 
     .about-section,
@@ -773,6 +814,7 @@ footer {
         max-width: 100%;
         text-align: center;
     }
+
 }
 
 /* ==================================================
