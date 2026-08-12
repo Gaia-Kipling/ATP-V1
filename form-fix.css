@@ -1,0 +1,84 @@
+/* ==================================================
+   ATP-V1 — NON-CONTACT FORM VISUAL FIX
+   Applies only to the forms on Home, About and Services.
+   Contact page is intentionally not affected.
+================================================== */
+
+/* The generic .contact-overlay rule in style.css is also used by
+   the standalone Contact page. Scope the grid layout to that page
+   so the Home/About/Services form section stays as a single column. */
+.contact-section .contact-overlay {
+    display: block;
+    width: min(100%, 820px);
+    margin: 0 auto;
+}
+
+.contact-section .contact-overlay > h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-section .contact-overlay > p {
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section .contact-form {
+    width: min(100%, 620px);
+    max-width: 620px;
+    margin: 32px auto 0;
+    padding: 34px 36px;
+    background: rgba(255,255,255,.18);
+    border: 1px solid rgba(255,255,255,.28);
+    border-radius: 22px;
+    box-shadow: 0 24px 55px rgba(24,46,58,.22);
+    backdrop-filter: blur(18px);
+}
+
+.contact-section .contact-form label {
+    margin-top: 18px;
+}
+
+.contact-section .contact-form label:first-of-type {
+    margin-top: 0;
+}
+
+.contact-section .contact-form input,
+.contact-section .contact-form textarea,
+.contact-section .contact-form select {
+    width: 100%;
+    display: block;
+    min-height: 52px;
+    margin: 8px 0 0;
+    padding: 14px 16px;
+    border-radius: 12px;
+}
+
+.contact-section .contact-form textarea {
+    min-height: 150px;
+}
+
+.contact-section .contact-form .btn {
+    width: 100%;
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .contact-section .contact-overlay {
+        width: 100%;
+    }
+
+    .contact-section .contact-form {
+        width: 100%;
+        padding: 26px 22px;
+        margin-top: 26px;
+    }
+}
+
+@media (max-width: 520px) {
+    .contact-section .contact-form {
+        padding: 24px 18px;
+        border-radius: 18px;
+    }
+}
