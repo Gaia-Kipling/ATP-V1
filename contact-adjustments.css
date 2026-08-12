@@ -1,0 +1,13 @@
+/* Contact page alignment adjustment */
+
+/* Align the top of the map with the top of the contact form card. */
+.contact-left iframe {
+    margin-top: 60px;
+}
+
+/* Keep the map naturally positioned when the two columns stack. */
+@media (max-width: 980px) {
+    .contact-left iframe {
+        margin-top: 0;
+    }
+}
