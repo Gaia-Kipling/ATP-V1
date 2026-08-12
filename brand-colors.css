@@ -115,10 +115,30 @@ header {
     border-color: var(--border);
 }
 
+/* ==================================================
+   FOOTER — RESTORED TO THE PREVIOUS LIGHT STYLE
+   Everything else keeps the new ATP teal palette.
+================================================== */
 footer {
-    background: linear-gradient(135deg,#075f63,#064e52);
+    background: linear-gradient(180deg,#eaf5fa 0%,#e3f1f8 100%);
+    border-top-color: rgba(65,112,135,.14);
 }
 
-footer a {
-    color: #eaf7f7;
+footer .footer-left h3 {
+    color: #2f617d;
+}
+
+footer .footer-left p {
+    color: #61727c;
+}
+
+footer .footer-right a {
+    background: rgba(255,255,255,.9);
+    border-color: rgba(65,112,135,.14);
+    box-shadow: 0 7px 18px rgba(48,84,103,.07);
+}
+
+footer .footer-right a:hover {
+    background: #fff;
+    box-shadow: 0 12px 24px rgba(48,84,103,.12);
 }
