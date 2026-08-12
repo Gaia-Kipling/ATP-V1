@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
 /* ==================================================
    ATP BRAND COLOUR PALETTE
-   Colour-only visual override — no layout or behaviour changes.
+   Colour and typography override — no layout or behaviour changes.
 ================================================== */
 
 :root {
@@ -17,6 +19,39 @@
     --shadow-sm: 0 8px 24px rgba(7, 95, 99, 0.08);
     --shadow-md: 0 18px 42px rgba(7, 95, 99, 0.12);
     --shadow-lg: 0 28px 60px rgba(7, 95, 99, 0.16);
+}
+
+/* ==================================================
+   ATP TYPOGRAPHY
+================================================== */
+body {
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 0.005em;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+}
+
+nav a,
+.btn,
+label,
+.footer-left h3 {
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+}
+
+.logo h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+}
+
+.logo p {
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 0.04em;
 }
 
 body {
