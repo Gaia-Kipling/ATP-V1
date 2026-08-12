@@ -72,6 +72,11 @@
     href="style.css"
   >
 
+  <link
+    rel="stylesheet"
+    href="contact-adjustments.css"
+  >
+
 </head>
 
 <body>
@@ -124,7 +129,7 @@
 
   <main id="main-content">
 
-        <section class="contact-page">
+    <section class="contact-page">
 
       <div class="contact-overlay">
 
@@ -174,82 +179,24 @@
             method="POST"
           >
 
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Enquiry"
-            >
-
-            <input
-              type="hidden"
-              name="_captcha"
-              value="false"
-            >
-
-            <input
-              type="hidden"
-              name="_template"
-              value="table"
-            >
-
-            <input
-              type="hidden"
-              name="_next"
-              value="https://atpcounselling.co.za/thank-you.html"
-            >
-
-            <input
-              type="hidden"
-              name="_autoresponse"
-              value="Thank you for contacting ATP Counselling and Coaching. Your enquiry has been received and we will be in touch shortly."
-            >
+            <input type="hidden" name="_subject" value="New Enquiry">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://atpcounselling.co.za/thank-you.html">
+            <input type="hidden" name="_autoresponse" value="Thank you for contacting ATP Counselling and Coaching. Your enquiry has been received and we will be in touch shortly.">
 
             <label for="name">Name*</label>
-
-            <input
-              id="name"
-              type="text"
-              name="name"
-              autocomplete="name"
-              placeholder="Your name"
-              required
-            >
+            <input id="name" type="text" name="name" autocomplete="name" placeholder="Your name" required>
 
             <label for="email">Email*</label>
-
-            <input
-              id="email"
-              type="email"
-              name="email"
-              autocomplete="email"
-              placeholder="Your email address"
-              required
-            >
+            <input id="email" type="email" name="email" autocomplete="email" placeholder="Your email address" required>
 
             <label for="phone">Phone*</label>
-
-            <input
-              id="phone"
-              type="tel"
-              name="phone"
-              autocomplete="tel"
-              pattern="^\+?[0-9\s()-]{10,20}$"
-              placeholder="Your phone number"
-              required
-            >
+            <input id="phone" type="tel" name="phone" autocomplete="tel" pattern="^\+?[0-9\s()-]{10,20}$" placeholder="Your phone number" required>
 
             <label for="service">Service Required*</label>
-
-            <select
-              id="service"
-              name="service"
-              required
-            >
-
-              <option value="">
-                Please select a service
-              </option>
-
+            <select id="service" name="service" required>
+              <option value="">Please select a service</option>
               <option>Bereavement Counselling</option>
               <option>Parenting Skills</option>
               <option>Family Conflict</option>
@@ -269,24 +216,12 @@
               <option>School/Work-Related Stressors</option>
               <option>Retirement Adaptation</option>
               <option>Time Management</option>
-
             </select>
 
             <label for="message">Message*</label>
+            <textarea id="message" name="message" autocomplete="off" placeholder="Enter your message" required></textarea>
 
-            <textarea
-              id="message"
-              name="message"
-              autocomplete="off"
-              placeholder="Enter your message"
-              required
-            ></textarea>
-
-            <button
-              class="btn"
-              type="submit"
-              aria-label="Submit contact form"
-            >
+            <button class="btn" type="submit" aria-label="Submit contact form">
               Submit
             </button>
 
@@ -298,7 +233,7 @@
 
     </section>
 
-        <!-- ================= CONTACT DETAILS CARD ================= -->
+    <!-- ================= CONTACT DETAILS CARD ================= -->
 
     <section class="contact-card-section">
 
@@ -307,23 +242,13 @@
         <h2>Contact Details</h2>
 
         <p>
-
           <strong>Phone Number:</strong><br>
-
-          <a href="tel:+27834254940">
-            +27 83 425 4940
-          </a>
-
+          <a href="tel:+27834254940">+27 83 425 4940</a>
         </p>
 
         <p>
-
           <strong>Email:</strong><br>
-
-          <a href="mailto:angelique@atpcounselling.co.za">
-            angelique@atpcounselling.co.za
-          </a>
-
+          <a href="mailto:angelique@atpcounselling.co.za">angelique@atpcounselling.co.za</a>
         </p>
 
       </div>
@@ -339,63 +264,27 @@
     <div class="footer-left">
 
       <h3>ATP Counselling and Coaching</h3>
-
       <p>Growing with purpose</p>
-
-      <p class="copyright">
-        © 2026 ATP Counselling and Coaching. All Rights Reserved.
-      </p>
+      <p class="copyright">© 2026 ATP Counselling and Coaching. All Rights Reserved.</p>
 
     </div>
 
     <div class="footer-right">
 
-      <a
-        href="https://wa.me/27834254940"
-        target="_blank"
-        rel="noopener"
-        aria-label="Chat with ATP Counselling and Coaching on WhatsApp"
-      >
-        <img
-          src="whatsapp.png"
-          alt="WhatsApp"
-        >
+      <a href="https://wa.me/27834254940" target="_blank" rel="noopener" aria-label="Chat with ATP Counselling and Coaching on WhatsApp">
+        <img src="whatsapp.png" alt="WhatsApp">
       </a>
 
-      <a
-        href="https://www.instagram.com/atp_counselling_and_coaching?igsh=d2todDFxMTQ5eW44"
-        target="_blank"
-        rel="noopener"
-        aria-label="Visit ATP Counselling and Coaching on Instagram"
-      >
-        <img
-          src="instagram.png"
-          alt="Instagram"
-        >
+      <a href="https://www.instagram.com/atp_counselling_and_coaching?igsh=d2todDFxMTQ5eW44" target="_blank" rel="noopener" aria-label="Visit ATP Counselling and Coaching on Instagram">
+        <img src="instagram.png" alt="Instagram">
       </a>
 
-      <a
-        href="https://www.psychologytoday.com/za/counselling/angelique-torres-polonia-glenvista-gt/1306987"
-        target="_blank"
-        rel="noopener"
-        aria-label="View ATP Counselling and Coaching on Psychology Today"
-      >
-        <img
-          src="psychologytoday.png"
-          alt="Psychology Today"
-        >
+      <a href="https://www.psychologytoday.com/za/counselling/angelique-torres-polonia-glenvista-gt/1306987" target="_blank" rel="noopener" aria-label="View ATP Counselling and Coaching on Psychology Today">
+        <img src="psychologytoday.png" alt="Psychology Today">
       </a>
 
-      <a
-        href="https://www.facebook.com/profile.php?id=61561358146511"
-        target="_blank"
-        rel="noopener"
-        aria-label="Visit ATP Counselling and Coaching on Facebook"
-      >
-        <img
-          src="facebook.png"
-          alt="Facebook"
-        >
+      <a href="https://www.facebook.com/profile.php?id=61561358146511" target="_blank" rel="noopener" aria-label="Visit ATP Counselling and Coaching on Facebook">
+        <img src="facebook.png" alt="Facebook">
       </a>
 
     </div>
