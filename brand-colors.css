@@ -177,3 +177,41 @@ footer .footer-right a:hover {
     background: #fff;
     box-shadow: 0 12px 24px rgba(48,84,103,.12);
 }
+
+/* ==================================================
+   DARLING DIGITAL CREDIT
+   Reserved footer space for the website creator credit.
+   The Darling Digital text can be linked once the site is live.
+================================================== */
+footer {
+    position: relative;
+    padding-bottom: 62px;
+}
+
+footer::after {
+    content: 'Website designed & developed by Darling Digital';
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: calc(100% - 40px);
+    color: #6f8086;
+    font-family: 'Lato', 'Segoe UI', Arial, sans-serif;
+    font-size: .78rem;
+    font-weight: 500;
+    letter-spacing: .02em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding-bottom: 58px;
+    }
+
+    footer::after {
+        bottom: 14px;
+        max-width: calc(100% - 32px);
+        line-height: 1.4;
+    }
+}
