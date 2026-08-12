@@ -1,8 +1,8 @@
 /* Contact page alignment adjustment */
 
-/* Align the top of the map with the top of the contact form card. */
+/* Move the map slightly lower so it sits comfortably below the Visit Us heading and aligns better with the form. */
 .contact-left iframe {
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 /* Keep the map naturally positioned when the two columns stack. */
